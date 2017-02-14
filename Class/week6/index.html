@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 6</title>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header {
+            height: 60px;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .firstText {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 60px;
+        }
+
+        .secondText {
+            height: 90px;
+            min-height: 90px;
+            max-height: 90px;
+        }
+
+        .secondText img {
+            height: 75%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .gallery {
+            height: 120px;
+            min-height: 120px;
+            max-height: 120px;
+        }
+
+        #pic1 {
+            padding-top: 5%;
+            padding-left: 40%;
+            min-height: 120px;
+            max-height: 120px;
+        }
+
+        .pic1 {
+            margin-top: 5%;
+            margin-left: 15%;
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        .galleryOneRight img {
+            margin-left: 40%;
+            min-height: 80px;
+            max-height: 80px;
+        }
+
+        .galleryOneRight div {
+            text-align: center;
+        }
+
+        .relativeParent {
+            position: relative;
+        }
+
+        .relativeParent img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .relativeParent2 {
+            position: relative;
+        }
+
+        .relativeParent2 img {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #pic1SideBySide{
+          left: 30%;
+        }
+
+        #pic2SideBySide{
+          left: 70%;
+        }
+    </style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <!-- Header -->
+
+            <div class="col-md-2 randomColor header"></div>
+
+            <div class="col-md-4 randomColor header"></div>
+
+            <div class="col-md-2 randomColor header"></div>
+
+            <div class="col-md-2 randomColor header"></div>
+
+            <div class="col-md-2 randomColor header"></div>
+
+        </div>
+
+        <div class="row">
+            <!-- firstText -->
+
+            <div class="col-md-12 firstText randomColor">
+
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Heading 2 -->
+
+            <div class="col-md-12 secondText randomColor">
+                <img src="heart.png" alt="heart" />
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- gallery -->
+
+            <div class="col-md-4 gallery randomColor">
+
+                <img id="pic1" src="heart2.png" alt="another heart" />
+
+            </div>
+
+            <div class="col-md-4 gallery randomColor">
+
+                <img class="pic1" src="redheart.png" alt="another heart" />
+
+                <img class="pic1" src="orangeheart.png" alt="another heart" />
+
+            </div>
+
+            <div class="col-md-4 gallery randomColor galleryOneRight">
+
+                <img src="liquid.jpg" alt="another heart" />
+
+                <div>
+                    this liquid is delicious
+                </div>
+                <div>
+                    $21.50
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 gallery randomColor relativeParent">
+
+                <img src="water.jpg" alt="another heart" />
+
+
+            </div>
+
+
+
+            <div class="col-md-4 gallery randomColor relativeParent2">
+
+              <img id="pic1SideBySide" src="water.jpg" alt="another heart" />
+
+              <img id="pic2SideBySide" src="water.jpg" alt="another heart" />
+
+
+
+            </div>
+
+            <div class="col-md-4 gallery randomColor"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 gallery randomColor"></div>
+
+            <div class="col-md-4 gallery randomColor"></div>
+
+            <div class="col-md-4 gallery randomColor"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        function getRandomNumber() {            
+            return Math.floor(Math.random() * 55 + 200);        
+        }
+
+                
+        $(document).ready(function() {
+
+                        
+            var bodyColumns = $(".randomColor");
+
+                        
+            bodyColumns.each(function() {
+
+                                
+                $(this).css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");
+
+                            
+            })
+
+                         $("body").css("background-color", "rgb(" + getRandomNumber() + "," + getRandomNumber() + "," + getRandomNumber() + ")");            
+            $("body").fadeIn();
+
+
+                    
+        })
+    </script>
+</body>
+
+</html>

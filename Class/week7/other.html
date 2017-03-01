@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    hello world!
+
+    <div id="myDiv">
+        Look some text!
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // () means execute function
+        // double slah means ignore this line
+        /* means everything between this is ignored */
+
+        //alert("this is a popup");
+
+        console.log("this is for debugging mesaages");
+
+        var myVar;
+        var myAnotherVar = "Here is my another var";
+
+        //alert(myAnotherVar);
+
+
+        console.log(myAnotherVar);
+
+        //concatenation
+
+        var myName = "Sara";
+        var myFirstName = "Novia";
+
+        //alert("My name is "+myName +" and my last name is" +myFirstName);
+
+        //{} code block
+        function sayMyName() {
+            //eevrythimg in code block will be executed
+
+            console.log("Your name is " + myName);
+
+        }
+
+        //calling the function
+
+        sayMyName();
+
+        function sayMyName2(name) {
+            //everythimg in code block will be executed
+
+            console.log("Your name is " + name);
+
+        }
+
+        //calling the function
+
+        sayMyName2("sara");
+        sayMyName2("jasmine");
+
+        /* when the document is ready, jQUERY gets the element with id myDiv and calls the
+        html function. html function will replace the html within the element
+        */
+
+        $(document).ready(function(){
+          alert("the document is ready!")
+          $("#myDiv").html("hey, i was able to change DONG");
+          $("#myDiv").append(" <br>add something more!");
+        });
+
+
+    </script>
+</body>
+
+</html>

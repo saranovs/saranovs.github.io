@@ -63,10 +63,12 @@ body {
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .masthead-nav>li {
     display: inline-block;
+
 }
 
 .masthead-nav>li+li {
@@ -76,11 +78,11 @@ body {
 .masthead-nav>li>a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     /* IE8 proofing */
-    color: rgba(255, 255, 255, .75);
+  /*  color: rgba(255, 255, 255, .75); <- makes the drop down links look transparent */
     border-bottom: 2px solid transparent;
 }
 
@@ -111,11 +113,13 @@ body {
 
 .cover {
     padding: 0 20px;
+
 }
 
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
+
 }
 
 
@@ -178,7 +182,8 @@ nav, .nav .open>a, .nav .open>a:focus {
 }
 
 .dropdown-menu>li>a:hover {
-    background-color: #b5cce0;
+    background-color: #638863;
+    font-size: 20px;
 }
 
 .dropdown-menu>li>a {

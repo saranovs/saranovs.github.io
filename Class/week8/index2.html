@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 8</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style media="screen">
+        #centerDiv {
+            text-align: center;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="shirtDiv" class="col-md-12">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="shortDiv" class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var shirt = {
+            type: "Shirt",
+            price: "$45",
+            style: "cowgirl",
+            color: "blue",
+            src: "shirt.jpg",
+            message: function() {
+                console.log("A shirt is useful");
+            }
+        }
+
+
+        $(document).ready(function() {
+            var myShirt = "<div id='centerDiv'>" +
+                "<div>" + shirt.type + "</div>" +
+                "<img src='" + shirt.src + "'/>" +
+                "<div>" + shirt.price + "</div>" +
+                "</div>";
+
+            $("#shirtDiv").html(myShirt);
+        });
+
+        var short = {
+            type: "Short",
+            price: "$55",
+            style: "short",
+            color: "pink",
+            src: "shorts.jpg",
+            message: function() {
+                console.log("A short is useful");
+            }
+        }
+
+        $(document).ready(function() {
+            var myShort = "<div id='centerDiv'>" +
+                "<div>" + short.type + "</div>" +
+                "<img src='" + short.src + "'/>" +
+                "<div>" + short.price + "</div>" +
+                "</div>";
+
+            $("#shortDiv").html(myShort);
+        });
+    </script>
+</body>
+
+</html>

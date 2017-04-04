@@ -72,14 +72,12 @@
                 </div>
 
                 <tr>
-                  <th>Rank</th>
-                  <th>Player</th>
-                  <th>Team</th>
-                  <th>Pos</th>
-                  <th>GP</th>
-                  <th>G</th>
-                  <th>A</th>
-                  <th>P</th>
+                  <th>Brand</th>
+                  <th>Name</th>
+                  <th>PRICE</th>
+                  <th>from</th>
+                  <th>image</th>
+                  <th>details</th>
                 </tr>
 
               </table>
@@ -127,7 +125,7 @@
         })
     </script>
     <script type="text/javascript">
-    var myUrl = "https://andersonguelphjs.github.io/class/week12/myJson.json";
+    var myUrl = "https://saranovs.github.io/Class/week12/myJson.json";
 
     $.getJSON(myUrl)
             .done(function(data) {
@@ -137,17 +135,17 @@
                   for (var i = 0; i < data.length; i ++){
                     console.log("i " +i +" name "+data[i].name);
                     myHtml +="<tr data-index='"+i+"'>"+
-                    "<td>"+(i +1 )+"</td>"+ //rank
-                    "<td>"+ data[i].name+"</td>"+ //player
-                    "<td>"+ data[i].team+"</td>"+ //team
-                    "<td>"+ data[i].position+"</td>"+ //position
-                    "<td>"+ data[i].gamesPlayed+"</td>"+ //games played
-                    "<td>"+ data[i].goals+"</td>"+ //goals
-                    "<td>"+ data[i].assists+"</td>"+ //assists
-                    "<td>"+ data[i].points+"</td>"+ //points
+                    "<td>"+(i +1 )+"</td>"+
+                    "<td>"+ data[i].brand+"</td>"+
+                    "<td>"+ data[i].name+"</td>"+
+                    "<td>"+ data[i].price+"</td>"+
+                    "<td>"+ data[i].from+"</td>"+
+                    "<td>"+ data[i].image+"</td>"+
+                    "<td>"+ data[i].details+"</td>"+
                     "</tr>";
 
                   }
+                  console.log(myHtml);
                   $("#statsTable").append(myHtml);
                   //for all td in statsTable turn on a click function, then execute the function
                   $("#statsTable").find("td").on("click", function(){

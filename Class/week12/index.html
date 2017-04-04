@@ -19,9 +19,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style media="screen">
-    body{
-      font-family: "Coda", sans-serif;
-    }
+        body {
+            font-family: "Coda", sans-serif;
+        }
+
         .top {
             height: 75px;
             max-height: 75px;
@@ -34,18 +35,15 @@
             min-height: 800px;
         }
 
-        #playerInfo img{
-          width: 200px;
-          float:left;
-
+        #playerInfo img {
+            width: 200px;
+            float: left;
         }
 
-        #playerInfo div{
-          padding-top: 100px;
-          padding-left: 35px;
+        #playerInfo div {
+            padding-top: 100px;
+            padding-left: 35px;
         }
-
-
     </style>
 </head>
 
@@ -62,25 +60,25 @@
 
             </div>
             <div class="col-md-8 middle">
-              <table id="statsTable" class="table table-hover">
-                <div id="playerInfo">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/NHL_Logo_former.svg/996px-NHL_Logo_former.svg.png" alt="" />
-                  <div>
-                    NHL Rookie Scoring Leaders
+                <table id="statsTable" class="table table-hover">
+                    <div id="playerInfo">
 
-                  </div>
-                </div>
+                        <div>
+                            Phones
 
-                <tr>
-                  <th>Brand</th>
-                  <th>Name</th>
-                  <th>PRICE</th>
-                  <th>from</th>
-                  <th>image</th>
-                  <th>details</th>
-                </tr>
+                        </div>
+                    </div>
 
-              </table>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Name</th>
+                        <th>PRICE</th>
+                        <th>from</th>
+                        <th>image</th>
+                        <th>details</th>
+                    </tr>
+
+                </table>
 
             </div>
             <div class="col-md-2 middle randomColor">
@@ -125,49 +123,44 @@
         })
     </script>
     <script type="text/javascript">
-    var myUrl = "saranovs.github.io/Class/week12/myJson.json";
+        var myUrl = "saranovs.github.io/Class/week12/myJson.json";
 
-    $.getJSON(myUrl)
+        $.getJSON(myUrl)
             .done(function(data) {
                 console.log("success!");
                 console.dir(data);
                 var myHtml = "";
-                  for (var i = 0; i < data.length; i ++){
-                    console.log("i " +i +" name "+data[i].name);
-                    myHtml +="<tr data-index='"+i+"'>"+
-                    "<td>"+(i +1 )+"</td>"+
-                    "<td>"+ data[i].brand+"</td>"+
-                    "<td>"+ data[i].name+"</td>"+
-                    "<td>"+ data[i].price+"</td>"+
-                    "<td>"+ data[i].from+"</td>"+
-                    "<td>"+ data[i].image+"</td>"+
-                    "<td>"+ data[i].details+"</td>"+
-                    "</tr>";
+                for (var i = 0; i < data.length; i++) {
+                    console.log("i " + i + " name " + data[i].name);
+                    myHtml += "<tr data-index='" + i + "'>" +
+                        "<td>" + (i + 1) + "</td>" +
+                        "<td>" + data[i].brand + "</td>" +
+                        "<td>" + data[i].name + "</td>" +
+                        "<td>" + data[i].price + "</td>" +
+                        "<td>" + data[i].from + "</td>" +
+                        "<td>" + data[i].image + "</td>" +
+                        "<td>" + data[i].details + "</td>" +
+                        "</tr>";
 
-                  }
-                  console.log(myHtml);
-                  $("#statsTable").append(myHtml);
-                  //for all td in statsTable turn on a click function, then execute the function
-                  $("#statsTable").find("td").on("click", function(){
+                }
+                console.log(myHtml);
+                $("#statsTable").append(myHtml);
+                //for all td in statsTable turn on a click function, then execute the function
+                $("#statsTable").find("td").on("click", function() {
                     //get the closet row of this td and get the data-index attribute
                     var index = $(this).closest("tr").attr("data-index");
-                    console.log("index :" +index);
-                    $("#playerInfo").find("img").attr("src",data[index].image);
-                    $("#playerInfo").find("div").attr("src",data[index].details);
+                    console.log("index :" + index);
+                    $("#playerInfo").find("img").attr("src", data[index].image);
+                    $("#playerInfo").find("div").attr("src", data[index].details);
 
 
-                  })
-                 })
+                })
+            })
 
             .fail(function(data) {
                 console.log("fail!");
                 console.dir(data);
             })
-
-
-
-
-
     </script>
 </body>
 

@@ -1,0 +1,77 @@
+[{
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S7",
+        "price": 100.00,
+        "from": "Koodo Mobile",
+        "image": "1.jpeg",
+        "details":"The Samsung Galaxy S7 knows no limits. Watch videos in crisp clarity on the 5.1 inch Quad HD Super AMOLED display and enjoy PC-quality gaming thanks"
+    },
+    [{
+            "brand": "Apple",
+            "name": "iPhone SE",
+            "price": 0.00,
+            "from": "Koodo Mobile",
+            "image":"2.jpeg",
+            "details":"12MP iSight camera with Focus Pixels and True Tone flash. A9 chip with integrated M9 motion coprocessor 16gb."
+        },
+        [{
+                "brand": "Samsung",
+                "name": "Samsung Galaxy Grand",
+                "price": 98.68,
+                "from": "AliExpress.com",
+                "image":"3.jpeg",
+                "details":"5.0 inch in cell phones from original samsung galaxy on AliExpress.com | Alibaba Group"
+            },
+            [{
+                    "brand": "Samsung",
+                    "name": "Samsung Galaxy S6",
+                    "price": 249.99,
+                    "from": "ebay - worldfinegoods",
+                    "image":"4.jpeg",
+                    "details":"samsung galaxy s 6 sm g 920 unlocked smartphone 32 gb this is a refurbished samsung galaxy s 6 smartphone this phone will show visible signs of..."
+                },
+                [{
+                        "brand": "Samsung",
+                        "name": "Samsung Galaxy J7",
+                        "price": 204.62,
+                        "from": "AliExpress.com",
+                        "image":"5.jpeg"
+                    },[{
+                            "brand": "Vertu",
+                            "name": "Virtu Signature",
+                            "price": 36520.00,
+                            "from": "Selfridges CA",
+                            "image":"6.jpeg",
+                            "details":"Meticulously handcrafted from the finest rare materials to the label's uncompromising standards, Signature is the outstanding, elementary ..."
+                        },
+                        [{
+                                "brand": "Google",
+                                "name": "Google Pixel",
+                                "price": 899.99,
+                                "from": "Google",
+                                "image":"7.jpeg",
+                                "details":"Meet Pixel, a phone by Google. It’s the first phone with the Google Assistant built in. Ask it questions. Tell it to do things. It’s your own ... Other style options: Black ($850)"
+                            },[{
+                                    "brand": "Apple",
+                                    "name": "iPhone 5S",
+                                    "price": 179.99,
+                                    "from": "ebay- worldfinegoods",
+                                    "image":"8.jpeg",
+                                    "details":"apple iphone 5 s 32 gb in gold silver or space gray unlocked smartphone this is a used apple iphone 5 s 32 gb smartphone this phone is in used ..."
+                                },
+                                [{
+                                        "brand": "Samsung",
+                                        "name": "Samsung Galaxy S4",
+                                        "price": 299.99,
+                                        "from": "FactoryDirect.ca",
+                                        "image":"9.jpeg",
+                                        "details":"Stay connected either on the phone or the Web with the Galaxy S4 I337 from Samsung. With 16 GB of memory and a 4G connection, this phone stores ..."
+                                    },
+                                    [{
+                                            "brand": "Blu Studio",
+                                            "name": "Selfie 2",
+                                            "price": 110.00,
+                                            "from": "5+ shops",
+                                            "image":"10.jpeg",
+                                            "details":"Stay connected either on the phone or the Web with the Galaxy S4 I337 from Samsung. With 16 GB of memory and a 4G connection, this phone stores ..."
+                                        },
